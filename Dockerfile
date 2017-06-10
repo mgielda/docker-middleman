@@ -19,7 +19,7 @@ RUN chown -R nobody:nogroup /app
 ADD Gemfile /app
 ADD Gemfile.lock /app
 
-RUN cd /app && bundle install --without development test
+RUN cd /app && bundle install
 
 # Define working directory.
 WORKDIR /app
